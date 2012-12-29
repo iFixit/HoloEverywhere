@@ -10,49 +10,35 @@
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:drawableLeft="@drawable/icon"
-			android:ellipsize="marquee"
+			android:layout_marginTop="6dp"
 			android:gravity="center"
 			android:lines="1"
-			android:padding="6dp"
-			android:text="HoloEverywhere"
-			android:textSize="30sp"
+			android:text="@string/library_name"
+			android:textColor="@color/holo_blue_light"
+			android:textSize="36sp"
 			android:textStyle="bold" />
-		<Divider
+		<TextView
 			android:layout_width="match_parent"
-			android:layout_height="1dp" />
-		<Button
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:layout_marginTop="18dp"
+			android:gravity="center"
+			android:text="@string/about_text" />
+		<DemoNavigationItem
 			android:id="@+id/github"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="?selectableItemBackground"
-			android:drawableLeft="@drawable/github"
-			android:gravity="center"
-			android:maxLines="2"
-			android:padding="6dp"
-			android:text="Fork me on GitHub"
-			android:textSize="26sp" />
-		<Button
-			android:id="@+id/google_plus"
+			android:text="@string/github"
+			android:color="@color/holo_blue_light" />
+		<Divider
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="?selectableItemBackground"
-			android:drawableRight="@drawable/gplus"
-			android:gravity="center"
-			android:maxLines="2"
-			android:padding="6dp"
-			android:text="Write to Christophe"
-			android:textSize="26sp" />
-		<Button
-			android:id="@+id/email"
+			android:orientation="vertical" />
+		<DemoNavigationItem
+			android:id="@+id/developers"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:background="?selectableItemBackground"
-			android:drawableLeft="@drawable/email"
-			android:gravity="center"
-			android:maxLines="2"
-			android:padding="6dp"
-			android:text="Write to Sergey"
-			android:textSize="26sp" />
+			android:text="@string/write_to_developers"
+			android:color="@color/holo_green_light" />
 	</LinearLayout>
 </ScrollView>
